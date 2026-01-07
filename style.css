@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.nav-logo img {
+    width: 130px;
+    height: auto;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-links a {
+    margin-left: 50px;
+}
+
+nav .nav-links i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links a:hover{
+    color: #c6ad8a;
+}
+
+.nav-links i:hover{
+    color: #c6ad8a;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 600px;
+   background: url(../img/header\ \(2\).jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.header-content{
+    color: white;
+    margin-left: 150px;
+    margin-top: 200px;
+    width: 700px;
+    height: 300px;
+    line-height: 60px;
+}
+
+.header-content h1{
+    font-size: 60px;
+}
+
+.header-content a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px 50px;
+    background-color: #c6ad8a;
+   
+}
+
+/* header-2 */
+
+.header-2{
+    width: 100%;
+    height: 600px;
+    background: url(../img/header\ \(3\).jpg); 
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   padding-top: 500px;
+}
+
+.header-content-2{
+    color: white;
+    margin-left: 470px;
+    width: 700px;
+    height: 300px;
+    line-height: 60px;
+}
+
+.header-content-2 h1{
+    font-size: 60px;
+}
+
+.header-2 h3, .header-content-2 a{
+    margin-left: 455px;
+}
+
+.header-content-2 a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px 50px;
+    background-color: #c6ad8a;
+   
+}
+
+/* header-3 */
+
+.header-3{
+    width: 100%;
+    height: 600px;
+    background: url(../img/header\ \(1\).jpg); 
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   padding-top: 200px;
+}
+
+.header-content-3{
+    color: white;
+    margin-left: 150px;
+    width: 700px;
+    height: 300px;
+    line-height: 60px;
+}
+
+.header-content-3 h1{
+    font-size: 60px;
+}
+
+.header-content-3 a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px 50px;
+    background-color: #c6ad8a;
+   
+}
+
+/* grid */
+.grid-container{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-rows: 1fr;
+   padding-top: 40px;
+   color: #605e5d;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 90px;
+    margin-left: 70px;
+
+}
+
+/* footer */
+
+.footer-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.footer-information img {
+    width: 250px;
+    margin-top: 30px;
+}
+
+.footer-information {
+    width: 380px;
+    height: 380px;
+    margin-top: 40px;
+}
+
+
+
+
+.footer-information li {
+    line-height: 40px;
+    margin-left: 30px;
+    color: #707070;
+}
+
+.footer-information h3 {
+    line-height: 40px;
+    margin-left: 15px;
+    color: #707070;
+}
+
+.footer-information h2 {
+    line-height: 80px;
+    margin-left: 15px;
+    color: #8d7c65;
+}
+
+.footer-information i{
+  color: #c6ad8a;
+
+}
+
+.footer-information a{
+    margin-left: 20px;
+    color: #c6ad8a;
+}
+
+
+
+.design-by {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgb(109, 102, 102);
+    padding-top: 30px;
+    color: #707070;
+    background-color: black;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-links {
+       display: none;
+    }
+
+    header {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .header-content {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-2 {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .header-content-2{
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+   
+
+    .header-3 {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .header-content-3{
+        max-width: 100%;
+        margin: 0;
+        text-align: center; 
+    }
+
+    .grid-container{
+        width: 100%;
+        height: 400px;
+        
+    }
+    
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container{
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .design-by{
+        height: auto;
+        padding: 50px 20px;
+    }
+    }
+   
+
